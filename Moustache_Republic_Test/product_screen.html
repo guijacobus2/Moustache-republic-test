@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product</title>
+
+        <!-- Page Logo icon -->
+        <link rel="icon" type="image/png" href="https://static.invisionapp-cdn.com/spa/cfprojects/common/img/favicon-16x16.2648d8282b.png" sizes="16x16" />
+
+         <!-- Custom css -->
+        <link rel="stylesheet" href="product_screen.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    </head>
+
+    <body>
+
+        <!-- Header with "My cart" on the top right of the screen -->
+        <header>
+            <button  class="btn btn-info" data-toggle="collapse" data-target="#demo" id="myCart">My cart ( )</button>
+            <div id="demo" class="collapse">
+                <img src="classic-tee.jpg" alt="Classic white T-shirt" style="height: 150px; position: relative; margin-left: 80%; z-index: 1;">
+                <h6 style="position: relative; margin-top: -120px; z-index: 1;">Classic Tee</h6>
+                <h6 style="position: relative; z-index: 1;">1x $75.00</h6>
+                <h6 style="position: relative; z-index: 1;">Size: S</h6>
+
+                <img src="classic-tee.jpg" alt="Classic white T-shirt" style="height: 150px; position: relative; margin-top: 5%; margin-left: 80%; z-index: 1;">
+                <h6 style="position: relative; margin-top: -120px; z-index: 1;">Classic Tee</h6>
+                <h6 style="position: relative; z-index: 1;">3x $75.00</h6>
+                <h6 style="position: relative; z-index: 1;">Size: L</h6>
+              
+            </div>
+            
+        </header>
+
+        <div><img src="classic-tee.jpg" alt="Classic white T-shirt" style="float: left;"></div>
+        <div id="product-details">
+            <h3 id="product-name">Classic Tee</h6>
+            <h4 id="product-price">$75.00</h3>
+            <p id="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus <br> laoreet nunc, quis interdum turpis vulputate sed. Donec consequat <br> mauris in vehicula 
+                posuere. Vestibulum non magna in velit dignissim <br> molestie.</p>
+
+            <h5 id="product-size">SIZE</h5><span class="required">*</span><h5 style="display: inline;" id="size"></h5>
+
+            <div id="myDIV">  
+                <button class="btns" id="size-s" type="button" onclick="selectFunction1()">S</button>
+                <button class="btns" id="size-m" type="button" onclick="selectFunction2()">M</button>
+                <button class="btns" id="size-l" type="button" onclick="selectFunction3()">L</button>
+            </div>
+                
+
+            <button id="submit-button" type="submit">ADD TO CART</button>
+
+            
+
+            
+        </div>
+
+
+        <script src="product_screen_add_to_cart.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
